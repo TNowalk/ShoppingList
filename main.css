@@ -1,0 +1,57 @@
+body {
+	/*  web font from http://fontspace.com/bythebutterfly/cutie-patootie  */
+	
+	font-family: 'cutie-patootie';
+	background-image: url('images/kitchen.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.container {
+	width: 650px;
+	margin: 0 auto;
+}
+.input {
+	width: 500px;
+	margin: 0 auto;
+	border-radius: 10px;
+	text-align: center;
+	background-image: url('images/lines.png');
+}
+h1 {
+	padding-top: 20px;
+	font-size: 48px;
+	margin-bottom: 15px;
+}
+#item {
+	width: 285px;
+
+}
+button {
+	
+}
+#add {
+	
+}
+#remove {
+
+}
+#sort {
+
+}
+
+
+
+#list {
+	margin-top: 12px;
+	padding: 5px 40px;
+	text-align: left;
+}
+#list li {
+	padding-left: 15px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.checked {
+	text-decoration: line-through;
+}
+
