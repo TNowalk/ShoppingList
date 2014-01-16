@@ -13,7 +13,7 @@ body {
 .input {
 	width: 500px;
 	margin: 0 auto;
-	border-radius: 10px;
+	border-radius: 2px;
 	text-align: center;
 	background-image: url('images/lines.png');
 }
@@ -54,7 +54,7 @@ button {
 	background-repeat: no-repeat;
 	background position: left center;
 }
-#delete {
+.delete {
 	float: right;
 }
 

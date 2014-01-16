@@ -13,7 +13,15 @@ $(document).ready(function(){
 		document.getElementById('item').value = '';
 	});
 
+	$('.delete').hide();
 
+	$('#list li').mouseenter(function(){
+		$('#list li .delete').show();
+	});
+
+	$('#list li').mouseleave(function(){
+		$('#list li .delete').hide();
+	});
 
 });
 
