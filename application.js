@@ -8,6 +8,8 @@ $(document).ready(function(){
 	});	
 
 //add list items
+
+
 	$('#add').click(function(){
 		var txtbox = document.getElementById('item');
 		var txtval = txtbox.value;		
@@ -17,14 +19,17 @@ $(document).ready(function(){
 	});
 
 //cross off list items
-	$('#list li .box').click(function(){
+	$('#list li .box').on("click", check);
+
+	function check() {
 		$(this).css('background-image', 'url("images/boxChecked.png")');
 		$(this).closest('li').css('text-decoration', 'line-through');
 		$(this).click(function(){
 			$(this).css('background-image', 'url("images/box.png")');
+			$(this).closest('li').css('text-decoration', 'none');
 		});
-				
-	});
+	}			
+	
 
 //delete list items
 	$('#list li .delete').click(function(){
