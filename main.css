@@ -23,6 +23,7 @@ h1 {
 	margin-bottom: 10px;
 }
 #item {
+	margin-top: 8px;
 	height: 20px;
 	width: 200px;
 	vertical-align: center;
@@ -40,7 +41,7 @@ button {
 }
 
 #list {
-	margin-top: 8px;
+	margin-top: 4px;
 	padding: 5px 40px 5px 15px;
 	text-align: left;
 	list-style: none;
