@@ -20,38 +20,53 @@ body {
 h1 {
 	padding-top: 20px;
 	font-size: 48px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 #item {
-	width: 285px;
+	margin-top: 8px;
+	height: 20px;
+	width: 200px;
+	vertical-align: center;
 
 }
 button {
-	
-}
-#add {
-	
-}
-#remove {
+	height: 24px;
+	width: 24px;
+	background: none;
+	font-size: 18px;
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 0 0 4px 0;
 
 }
-#sort {
-
-}
-
-
 
 #list {
-	margin-top: 12px;
-	padding: 5px 40px;
+	margin-top: 4px;
+	padding: 5px 40px 5px 15px;
 	text-align: left;
+	list-style: none;
 }
 #list li {
-	padding-left: 15px;
+	padding-left: 40px;
 	font-size: 24px;
 	font-weight: bold;
+	background-image: url('images/box.png');
+	background-repeat: no-repeat;
+	background position: left center;
 }
+#delete {
+	float: right;
+}
+
 .checked {
 	text-decoration: line-through;
 }
+.checked li {
+	background-image: url('images/boxChecked.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
 
+
+
+/*comment*/
