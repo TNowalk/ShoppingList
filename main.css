@@ -39,33 +39,41 @@ button {
 	padding: 0 0 4px 0;
 
 }
+#delChkBtn {
+	width: auto;
+	height: auto;
+	margin-top: 15px;
+	padding: 7px;
+	background-color: hsla(357, 96%, 46%, 0.6);
+}
 
 #list {
 	margin-top: 4px;
-	padding: 5px 40px 5px 15px;
+	padding: 5px 5px 5px 15px;
 	text-align: left;
 	list-style: none;
 }
 #list li {
-	padding-left: 40px;
 	font-size: 24px;
 	font-weight: bold;
+}
+span {
+	margin: 0;
+}
+
+.box {
+	float: left;
+	margin-right: 30px;
+	height: 17px;
+	width: 17px;
 	background-image: url('images/box.png');
-	background-repeat: no-repeat;
-	background position: left center;
+
 }
 .delete {
 	float: right;
+	margin-top: 3px;
 }
 
-.checked {
-	text-decoration: line-through;
-}
-.checked li {
-	background-image: url('images/boxChecked.png');
-	background-repeat: no-repeat;
-	background-position: left center;
-}
 
 
 
