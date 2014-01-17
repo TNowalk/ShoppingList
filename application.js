@@ -5,7 +5,7 @@ $(document).ready(function(){
 		if(event.keyCode == 13) {
 			event.preventDefault();
 			$('#add').click();
-		}
+		};
 	});	
 
 //add list items
@@ -24,19 +24,20 @@ $(document).ready(function(){
 	});
 
 //cross off list items
-	$('#list li .box').click(function() {
-		event.preventDefault();
-		$(this).toggleClass('Checked');
-		$(this).closest('li').toggleClass('strike');
-	});			
+	$('#list').on('click', 'li', function(){$(this).toggleClass('strike');});
+	$('#list').on('click', 'li', function(){$(this).closest('.box').toggleClass('Checked');});
 	
-
 //delete list items
 	$('#list li .delete').click(function(){
 		event.preventDefault();
 		$(this).closest('li').remove();
 	});
 
+//double click text edit
+//	$('#list li span').dblclick(function(){
+
+
+	
 
 //show delete button on mouse hover
 
