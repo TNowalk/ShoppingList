@@ -3,6 +3,7 @@ $(document).ready(function(){
 // use enter to add list items
 	$('#item').keyup(function(event){
 		if(event.keyCode == 13) {
+			event.preventDefault();
 			$('#add').click();
 		}
 	});	
@@ -11,14 +12,20 @@ $(document).ready(function(){
 	$('#add').click(function(){
 		var txtbox = document.getElementById('item');
 		var txtval = txtbox.value;
+		event.preventDefault();
 
-		$('<li></li>').appendTo('#list').html('<div class="box"></div><span>' + txtval + '</span><img class="delete" src="images/delete.png"/>');
+		if(!$.trim($('#item').val())) {
+			alert('Please enter text to add to the list');
+		} else {
+			$('<li></li>').appendTo('#list').html('<div class="box"></div><span>' + txtval + '</span><img class="delete" src="images/delete.png"/>');
 
 		document.getElementById('item').value = '';
+		};
 	});
 
 //cross off list items
 	$('#list li .box').click(function() {
+		event.preventDefault();
 		$(this).toggleClass('Checked');
 		$(this).closest('li').toggleClass('strike');
 	});			
@@ -26,6 +33,7 @@ $(document).ready(function(){
 
 //delete list items
 	$('#list li .delete').click(function(){
+		event.preventDefault();
 		$(this).closest('li').remove();
 	});
 
@@ -35,11 +43,11 @@ $(document).ready(function(){
 //	$('#list li .delete').hide();
 
 //	$('#list li').mouseenter(function(){
-//		$(this).closest('img.delete').show();
+//		$(this).closest('.delete').show();
 //	});
 
 //	$('#list li').mouseleave(function(){
-//		$(this).closest('img.delete').hide();
+//		$(this).closest('.delete').hide();
 //	});
 
 });
