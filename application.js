@@ -35,17 +35,8 @@ $(document).ready(function(){
 	
 
 //show delete button on mouse hover
-	$('#list li .delete').hide();
-
-//	$('#list').on('mouseenter', 
-
-//	$('#list li').mouseenter(function(){
-//		$(this).closest('.delete').show();
-//	});
-
-//	$('#list li').mouseleave(function(){
-//		$(this).closest('.delete').hide();
-//	});
+	$('#list').on('mouseenter', 'li', function(){$(this).children('.delete').toggleClass('show');});
+	$('#list').on('mouseleave', 'li', function(){$(this).children('.delete').toggleClass('show');});
 
 });
 

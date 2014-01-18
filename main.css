@@ -81,8 +81,11 @@ span {
 .delete {
 	float: right;
 	margin-top: 3px;
+	display: none;
 }
-
+.show {
+	display: inline;
+}
 
 
 
