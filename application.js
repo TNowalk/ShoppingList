@@ -28,21 +28,16 @@ $(document).ready(function(){
 
 	
 //delete list items
-	$('.items').on('click', '.delete', function(){$(this).find('li.items').remove();});
-
-
-//	$('#list li .delete').click(function(){
-//		event.preventDefault();
-//		$(this).closest('li').remove();
-//	});
+	$('#list').on('click', 'img.delete', function(){$(this).find('li.items').remove();});
 
 //double click text edit
 //	$('#list li span').dblclick(function(){
 	
 
 //show delete button on mouse hover
+	$('#list li .delete').hide();
 
-//	$('#list li .delete').hide();
+//	$('#list').on('mouseenter', 
 
 //	$('#list li').mouseenter(function(){
 //		$(this).closest('.delete').show();
