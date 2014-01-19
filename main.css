@@ -70,6 +70,15 @@ span {
 }
 .Checked {
 	height: 18px;
+	/** 
+	 * Because you've already applied a background-image to the .box, you
+	 * don't need to reapply it here.  Instead, what you need to do is change
+	 * the position of the background image so that the Checked box is showing.
+	 *
+	 * I'd like for you to try to find the answer on your own, if you can't find 
+	 * it then let me know and I can help.  But basically, you'll be replacing the
+	 * line below with a the correct property that changes the position.
+	 */
 	background-image: url('images/box_Sprite.png');
 }
 .strike {
