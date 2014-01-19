@@ -65,12 +65,12 @@ span {
 	margin-right: 30px;
 	height: 17px;
 	width: 17px;
-	background-image: url('images/box.png');
+	background-image: url('images/box_Sprite.png');
 
 }
 .Checked {
 	height: 18px;
-	background-image: url('images/boxChecked.png');
+	background-image: url('images/box_Sprite.png');
 }
 .strike {
 	text-decoration: line-through;
